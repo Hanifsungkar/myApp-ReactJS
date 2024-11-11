@@ -1,4 +1,5 @@
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import logger from 'redux-logger';
 
 const initialState = {
     counter: 0
@@ -16,6 +17,6 @@ const doCounter = (state = initialState, action) => {
 }
 
 
-const store = createStore(counter)
+const store = createStore(doCounter, applyMiddleware(logger))
 
 export default store
