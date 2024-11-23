@@ -3,11 +3,6 @@ import {useState, useEffect} from 'react';
 import axios from 'axios';
 
 const App = () => {
-  // let init_todos = [
-  //   { id:"1", title: "Initiate github", completed: false }, 
-  //   { id:"2", title: "Create GCP slice", completed: true }, 
-  //   { id:"3", title: "Create CI / CD", completed: false }
-  // ]
   
   const [news, setNews] = useState([])
 
